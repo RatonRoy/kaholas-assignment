@@ -78,24 +78,24 @@ const Home = () => {
 					</div>
 				</article>
 				{/* end of the article section */}
-				<div className="img-container">
+				<div className="img-container mt-8 lg:mt-0">
 					<div className="all-images"> 
 						<div>
 						{
 							firstImage.map(img =>
 								<div key={img.id}>
 									<div className = "first-img" >
-										<img src={img.img} alt="here remain a image!!" />
+										<img src={img.img} alt="here remain a image!!"/>
 									</div>
 								</div>
 							)
 						}
 						</div>
-						<div className="two-images">
+						<div className="two-images mt-6 md:mt-0">
 							{
 								lastTwoImage.map(img =>
 									<div key={img.id}>
-										<div>
+										<div className='mt-4 md:mt-0'>
 											<img src={img.img} alt="here remain a image !!" />
 										</div>
 									</div>
