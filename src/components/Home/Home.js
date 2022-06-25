@@ -12,7 +12,6 @@ const Home = () => {
 		fetch("images.json")
 			.then(res => res.json())
 			.then(data => {
-				console.log(data);
 				setImg(data)
 			})
 	}, [])
@@ -32,7 +31,7 @@ const Home = () => {
 					<AiOutlineQuestionCircle /> </p>
 			</header>
 			{/* end of the header section */}
-			<main className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+			<main className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
 				<article>
 					<p>
 						In this 5 day's class, we will explore artists Monet, Matisse, and Van Gogh, among others, and then recreate paintings using crayons and watercolor. Students will have fun learning about the artists & creating their own art inspired by their work.
@@ -44,22 +43,22 @@ const Home = () => {
 						<p className='pl-3 text-primary font-bold'>Kimberly R Moseler</p>
 					</div>
 					<div className='flex items-center mb-2'>
-						<div class="rating">
-							<input type="radio" name="rating-2" class="mask mask-star-2 bg-secondary" />
-							<input type="radio" name="rating-2" class="mask mask-star-2 bg-secondary" />
-							<input type="radio" name="rating-2" class="mask mask-star-2 bg-secondary" />
-							<input type="radio" name="rating-2" class="mask mask-star-2 bg-secondary" />
-							<input type="radio" name="rating-2" class="mask mask-star-2 bg-secondary" checked />
+						<div className="rating">
+							<input type="radio" name="rating-2" className="mask mask-star-2 bg-secondary" />
+							<input type="radio" name="rating-2" className="mask mask-star-2 bg-secondary" />
+							<input type="radio" name="rating-2" className="mask mask-star-2 bg-secondary" />
+							<input type="radio" name="rating-2" className="mask mask-star-2 bg-secondary" />
+							<input type="radio" name="rating-2" className="mask mask-star-2 bg-secondary" checked />
 						</div>
 						<p className='pl-2'> 467 total reviews for this teacher</p>
 					</div>
 					<div className='flex items-center'>
-						<div class="rating">
-							<input type="radio" name="rating-2" class="mask mask-star-2 bg-secondary" />
-							<input type="radio" name="rating-2" class="mask mask-star-2 bg-secondary" />
-							<input type="radio" name="rating-2" class="mask mask-star-2 bg-secondary" />
-							<input type="radio" name="rating-2" class="mask mask-star-2 bg-secondary" />
-							<input type="radio" name="rating-2" class="mask mask-star-2 bg-secondary" checked />
+						<div className="rating">
+							<input type="radio" name="rating-2" className="mask mask-star-2 bg-secondary" />
+							<input type="radio" name="rating-2" className="mask mask-star-2 bg-secondary" />
+							<input type="radio" name="rating-2" className="mask mask-star-2 bg-secondary" />
+							<input type="radio" name="rating-2" className="mask mask-star-2 bg-secondary" />
+							<input type="radio" name="rating-2" className="mask mask-star-2 bg-secondary" checked />
 						</div>
 						<p className='pl-2'> 5 reviews for this class </p>
 					</div>
@@ -70,24 +69,23 @@ const Home = () => {
 							<button className='btn btn-primary text-white'>See Class Schedule <span className='pl-2'><MdOutlineArrowForwardIos /></span>
 							</button>
 						</p>
-						<p className='text-primary flex items-center font-bold text-xl cursor-pointer'>
-							<GiSelfLove /> <span className='pl-2'> Save</span>
+						<p className='text-primary flex items-center font-bold text-lg cursor-pointer'>
+							<GiSelfLove /> <span className='pl-2'> save</span>
 						</p>
-						<p className='text-primary flex items-center font-bold text-xl cursor-pointer'>
-							<RiShareForwardLine /> <span className='pl-2'>Share </span>
+						<p className='text-primary flex items-center font-bold text-lg cursor-pointer mr-12'>
+							<RiShareForwardLine /> <span className='pl-2'>share </span>
 						</p>
 					</div>
 				</article>
 				{/* end of the article section */}
 				<div className="img-container">
-					<h1> Totall images : {imgs.length} </h1>
 					<div className="all-images"> 
 						<div>
 						{
 							firstImage.map(img =>
 								<div key={img.id}>
 									<div className = "first-img" >
-										<img src={img.img} alt="Okay nothing is here!!" />
+										<img src={img.img} alt="here remain a image!!" />
 									</div>
 								</div>
 							)
@@ -98,7 +96,7 @@ const Home = () => {
 								lastTwoImage.map(img =>
 									<div key={img.id}>
 										<div>
-											<img src={img.img} alt="Okay nothing is here!!" />
+											<img src={img.img} alt="here remain a image !!" />
 										</div>
 									</div>
 								)
