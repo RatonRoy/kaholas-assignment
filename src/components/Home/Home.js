@@ -38,7 +38,7 @@ const Home = () => {
 					</p>
 					<div className="avatar flex items-center my-4">
 						<div className="w-12 rounded-full">
-						<img src="https://i.ibb.co/JdgB55G/teacher.jpg" />
+							<img src="https://i.ibb.co/JdgB55G/teacher.jpg" />
 						</div>
 						<p className='pl-3 text-primary font-bold'>Kimberly R Moseler</p>
 					</div>
@@ -65,50 +65,63 @@ const Home = () => {
 					<p className='mt-2 font-bold'>Completed by 21 learners</p>
 
 					<div className='mt-8 flex justify-between'>
-						<p>
-							<button className='btn btn-primary text-white'>See Class Schedule <span className='pl-2'><MdOutlineArrowForwardIos /></span>
-							</button>
-						</p>
-						<p className='text-primary flex items-center font-bold text-lg cursor-pointer'>
-							<GiSelfLove /> <span className='pl-2'> save</span>
-						</p>
-						<p className='text-primary flex items-center font-bold text-lg cursor-pointer mr-12'>
-							<RiShareForwardLine /> <span className='pl-2'>share </span>
-						</p>
+
+						{/* <!-- The button to open modal --> */}
+						<label for="my-modal" class="btn modal-button btn-primary text-white">See Class Schedule<MdOutlineArrowForwardIos />
+						</label>
+
+						{/* <!-- Put this part before </body> tag --> */}
+					<input type="checkbox" id="my-modal" class="modal-toggle" />
+					<div class="modal">
+						<div class="modal-box">
+							<h3 class="font-bold text-lg">Congratulations random Interner user!</h3>
+							<p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+							<div class="modal-action">
+								<label for="my-modal" class="btn">OK </label>
+							</div>
+						</div>
 					</div>
-				</article>
-				{/* end of the article section */}
-				<div className="img-container mt-8 lg:mt-0">
-					<div className="all-images"> 
-						<div>
+
+					<p className='text-primary flex items-center font-bold text-lg cursor-pointer'>
+						<GiSelfLove /> <span className='pl-2'> save</span>
+					</p>
+					<p className='text-primary flex items-center font-bold text-lg cursor-pointer mr-12'>
+						<RiShareForwardLine /> <span className='pl-2'>share </span>
+					</p>
+				</div>
+			</article>
+			{/* end of the article section */}
+			<div className="img-container mt-8 lg:mt-0">
+				<div className="all-images">
+					<div>
 						{
 							firstImage.map(img =>
 								<div key={img.id}>
-									<div className = "first-img" >
-										<img src={img.img} alt="here remain a image!!"/>
+									<div className="first-img" >
+										<img src={img.img} alt="here remain a image!!" />
 									</div>
 								</div>
 							)
 						}
-						</div>
-						<div className="two-images mt-6 md:mt-0">
-							{
-								lastTwoImage.map(img =>
-									<div key={img.id}>
-										<div className='mt-4 md:mt-0'>
-											<img src={img.img} alt="here remain a image !!" />
-										</div>
-									</div>
-								)
-							}
-						</div>
-
 					</div>
+					<div className="two-images mt-6 md:mt-0">
+						{
+							lastTwoImage.map(img =>
+								<div key={img.id}>
+									<div className='mt-4 md:mt-0'>
+										<img src={img.img} alt="here remain a image !!" />
+									</div>
+								</div>
+							)
+						}
+					</div>
+
 				</div>
-				{/* end of the div section */}
-			</main>
-			{/* end of the main section */}
-		</section>
+			</div>
+			{/* end of the div section */}
+		</main>
+			{/* end of the main section */ }
+		</section >
 	);
 };
 
