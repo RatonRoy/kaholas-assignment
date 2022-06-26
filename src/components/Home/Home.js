@@ -94,28 +94,28 @@ const Home = () => {
 												<td> 3 pm to 6 pm </td>
 												
 											</tr>
-											{/* <!-- row 1 --> */}
+											{/* <!-- row 2 --> */}
 											<tr>
 												<th> Thuesday </th>
 												<td>8 am to 12 pm </td>
 												<td> ........ </td>
 												
 											</tr>
-											{/* <!-- row 1 --> */}
+											{/* <!-- row 3--> */}
 											<tr>
 												<th>Wednesday</th>
 												<td>9 am to 12 pm </td>
 												<td> 3 pm to 6 pm </td>
 												
 											</tr>
-											{/* <!-- row 1 --> */}
+											{/* <!-- row 4 --> */}
 											<tr>
 												<th>Thursday</th>
 												<td>8 am to 12 pm </td>
 												<td> 4 pm to 6 pm </td>
 												
 											</tr>
-											{/* <!-- row 1 --> */}
+											{/* <!-- row 5 --> */}
 											<tr>
 												<th>Firday</th>
 												<td>9 am to 12 pm </td>

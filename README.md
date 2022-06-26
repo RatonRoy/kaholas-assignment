@@ -10,3 +10,4 @@
  *  The images were stored in a JSON file and called it using the useEffect hook and set the images in an array using the useState hook.
  *  I made the page responsive by using Tailwind CSS for mobile, tablet, and desktop screens.
  * I used the grid and flexbox class of Tailwind CSS for making the responsive layout of the webpage. 
+ * I add a modal on the See Class Schedule button so that anyone can  see the class schedule after clicking the button. 
