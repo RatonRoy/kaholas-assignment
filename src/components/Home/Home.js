@@ -143,7 +143,7 @@ const Home = () => {
 				{/* end of the article section */}
 				<div className="img-container mt-8 lg:mt-0">
 					<div className="all-images">
-						<div>
+						<div className = "mr-4">
 							{
 								firstImage.map(img =>
 									<div key={img.id}>
