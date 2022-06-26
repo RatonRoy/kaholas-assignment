@@ -20,7 +20,7 @@ const Home = () => {
 	const lastTwoImage = imgs.filter(img => img.id !== 1);
 
 	return (
-		<section className='px-12'>
+		<section className='px-12 min-h-screen'>
 			{/* start the header section  */}
 			<header className='my-8'>
 				<h1 className='md:text-2xl lg:text-3xl sm:text-xl font-bold'>
@@ -38,7 +38,7 @@ const Home = () => {
 					</p>
 					<div className="avatar flex items-center my-4">
 						<div className="w-12 rounded-full">
-							<img src="https://api.lorem.space/image/face?hash=92310" />
+						<img src="https://i.ibb.co/JdgB55G/teacher.jpg" />
 						</div>
 						<p className='pl-3 text-primary font-bold'>Kimberly R Moseler</p>
 					</div>
