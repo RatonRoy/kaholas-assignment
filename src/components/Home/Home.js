@@ -71,56 +71,106 @@ const Home = () => {
 						</label>
 
 						{/* <!-- Put this part before </body> tag --> */}
-					<input type="checkbox" id="my-modal" class="modal-toggle" />
-					<div class="modal">
-						<div class="modal-box">
-							<h3 class="font-bold text-lg">Congratulations random Interner user!</h3>
-							<p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
-							<div class="modal-action">
-								<label for="my-modal" class="btn">OK </label>
+						<input type="checkbox" id="my-modal" class="modal-toggle" />
+						<div class="modal">
+							<div class="modal-box">
+								<div class="overflow-x-auto">
+									<table class="table w-full">
+										{/* <!-- head --> */}
+										<thead>
+											<tr>
+												
+												<th> Day Of week  </th>
+												<th>Class Time </th>
+												<th>Class Time </th>
+												
+											</tr>
+										</thead>
+										<tbody>
+											{/* <!-- row 1 --> */}
+											<tr>
+												<th>Monday </th>
+												<td>9 am to 12 pm </td>
+												<td> 3 pm to 6 pm </td>
+												
+											</tr>
+											{/* <!-- row 1 --> */}
+											<tr>
+												<th> Thuesday </th>
+												<td>8 am to 12 pm </td>
+												<td> ........ </td>
+												
+											</tr>
+											{/* <!-- row 1 --> */}
+											<tr>
+												<th>Wednesday</th>
+												<td>9 am to 12 pm </td>
+												<td> 3 pm to 6 pm </td>
+												
+											</tr>
+											{/* <!-- row 1 --> */}
+											<tr>
+												<th>Thursday</th>
+												<td>8 am to 12 pm </td>
+												<td> 4 pm to 6 pm </td>
+												
+											</tr>
+											{/* <!-- row 1 --> */}
+											<tr>
+												<th>Firday</th>
+												<td>9 am to 12 pm </td>
+												<td> ...... </td>
+												
+											</tr>
+											
+										</tbody>
+									</table>
+								</div>
+								<div class="modal-action">
+									<label for="my-modal" class="btn btn-primary text-white">OK </label>
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<p className='text-primary flex items-center font-bold text-lg cursor-pointer'>
-						<GiSelfLove /> <span className='pl-2'> save</span>
-					</p>
-					<p className='text-primary flex items-center font-bold text-lg cursor-pointer mr-12'>
-						<RiShareForwardLine /> <span className='pl-2'>share </span>
-					</p>
-				</div>
-			</article>
-			{/* end of the article section */}
-			<div className="img-container mt-8 lg:mt-0">
-				<div className="all-images">
-					<div>
-						{
-							firstImage.map(img =>
-								<div key={img.id}>
-									<div className="first-img" >
-										<img src={img.img} alt="here remain a image!!" />
-									</div>
-								</div>
-							)
-						}
+						<p className='text-primary flex items-center font-bold text-lg cursor-pointer'>
+							<GiSelfLove /> <span className='pl-2'> save</span>
+						</p>
+						<p className='text-primary flex items-center font-bold text-lg cursor-pointer mr-12'>
+							<RiShareForwardLine /> <span className='pl-2'>share </span>
+						</p>
 					</div>
-					<div className="two-images mt-6 md:mt-0">
-						{
-							lastTwoImage.map(img =>
-								<div key={img.id}>
-									<div className='mt-4 md:mt-0'>
-										<img src={img.img} alt="here remain a image !!" />
+				</article>
+				{/* end of the article section */}
+				<div className="img-container mt-8 lg:mt-0">
+					<div className="all-images">
+						<div>
+							{
+								firstImage.map(img =>
+									<div key={img.id}>
+										<div className="first-img" >
+											<img src={img.img} alt="here remain a image!!" />
+										</div>
 									</div>
-								</div>
-							)
-						}
-					</div>
+								)
+							}
+						</div>
+						<div className="two-images mt-6 md:mt-0">
+							{
+								lastTwoImage.map(img =>
+									<div key={img.id}>
+										<div className='mt-4 md:mt-0'>
+											<img src={img.img} alt="here remain a image !!" />
+										</div>
+									</div>
+								)
+							}
+						</div>
 
+					</div>
 				</div>
-			</div>
-			{/* end of the div section */}
-		</main>
-			{/* end of the main section */ }
+				{/* end of the div section */}
+			</main>
+			{/* end of the main section */}
 		</section >
 	);
 };
